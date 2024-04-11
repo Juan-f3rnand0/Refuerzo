@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Ciclos {
+    public static void main(String[] args) {
+        // 
+        Scanner scanner = new Scanner(System.in);
+       
+        int cantidadPar = 0;
+        int sumaPar = 0;
+        
+        System.out.print("ingresa un número: ");
+        int n = scanner.nextInt();
+             
+        System.out.println("numero que se ingreso " + ":" + n);
+            for (int i = 1; i <= n; i++) {
+            	System.out.println("ingresa un numero:");
+            	int numero = scanner.nextInt();
+                System.out.println("numero ingresado :" + numero);
+                
+                if (numero % 2 == 0) {
+                    cantidadPar++;
+                    sumaPar += numero;
+            }
+                
+            System.out.println("Suma de pares: " + sumaPar);
+            System.out.println("Cantidad de pares: " + cantidadPar);
+         }    
+    }
+} 
+
+//realizar un algoritmo que permita en un array almacenar los dobles de "n" numeros
+
+/*ARITMETICOS
+ * suma = +
+ * resta = -
+ * multiplicacion = *
+ * division = /
+ * modulo = %
+ * incremento = ++
+ * decremento = --
+ */
+
+/*RELACIONALES
+ * igual a = ==
+ * diferente de = !=
+ * mayor que = >
+ * menor que = <
+ * mayor o igual que = >=
+ * menor o igual que = <=
+ */
+
+/*LOGICOS
+ * Y = &&
+ * O = ||
+ */

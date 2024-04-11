@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SegundoArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingrese cantidad de personas: ");
+        int cantidadPersonas = scanner.nextInt();
+        
+        String[] nombres = new String[cantidadPersonas];
+        double[] notas = new double[cantidadPersonas];
+        
+        for (int i = 0; i < cantidadPersonas; i++) {
+            scanner.nextLine();
+            System.out.print("Ingrese un nombre " + (i) + ": ");
+            nombres[i] = scanner.nextLine();
+            System.out.print("Ingrese la nota de " + nombres[i] + ": ");
+            notas[i] = scanner.nextDouble();
+        }
+        
+        System.out.println("\nNombres y notas:");
+        for (int i = 0; i < cantidadPersonas; i++) {
+            System.out.println("Nombre: " + nombres[i] + ", Nota: " + notas[i]);
+        }
+        
+    }
+}

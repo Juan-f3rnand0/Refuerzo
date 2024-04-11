@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Arrays {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int Suma = 0;
+        int Promedio = 0;
+        
+        System.out.println("Ingrese cantidad de números:");
+        int cantidad = scanner.nextInt();
+        
+        int[] resultados = new int[cantidad];
+        
+        for (int i = 0; i < cantidad; i++) {
+            System.out.println("Ingrese los números " + (i+1) + ":");
+            int numero = scanner.nextInt();
+            resultados[i] = numero * 2;
+            Suma += numero;
+        }
+
+        
+        Promedio = Suma / cantidad;
+        
+        System.out.println("Los resultados son:");
+        for (int i = 0; i < cantidad; i++) {
+            System.out.println("El doble del número es: " + resultados[i]);
+        }
+        System.out.println("Suma de los números: " + Suma);
+        System.out.println("Promedio de los números : " + Promedio);
+    }
+}
